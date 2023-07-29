@@ -17,4 +17,13 @@ void main() {
   print(value);
   print(value2);
   print(value3);
+
+  String greeting1 = "Hello, World";
+  print(greeting1);
+  String greeting = "$greeting1 From PC";
+  print(greeting);
+  greeting1 = "${greeting1.length} From PC";
+  print(greeting1);
+
+  print("\$12");
 }
