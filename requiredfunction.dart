@@ -1,7 +1,6 @@
 void main() {
   String name1 = "Het";
   int id = 1;
-  double value = 3.25;
   name(id: id, name: name1);
 
   // using final keyword
