@@ -12,19 +12,26 @@ void main() {
   print("car from Vehicle");
   Vehicle car1 = Car();
   print((car1 as Car).noOfWheels);
+
+  // with override
+  car.accelerate();
+  print(car.speed);
 }
 
 // Multiple inheriance is not allowed in Dart.
 class SomeValue {
-  int speed = 10;
+  int speed = 15;
   void accelerate() {
-    speed += 20;
+    speed += 30;
   }
 }
 
 class Vehicle extends SomeValue {
   bool isEngineWorking = false;
   bool isLightOn = true;
+  @override
+  //here @override method is not showing any error
+  // when i run it on dartPad it showing @override is mendatary to add
   void accelerate() {
     speed += 10;
   }
