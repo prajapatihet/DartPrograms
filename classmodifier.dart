@@ -1,3 +1,3 @@
-void main(){
-  print("Class Modifier...")
+void main() {
+  print("Class Modifier...");
 }
