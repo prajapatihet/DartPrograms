@@ -1,3 +1,3 @@
-void main(){
-  print("List in Dart....")
+void main() {
+  print("List in Dart....");
 }
