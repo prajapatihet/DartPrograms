@@ -9,4 +9,33 @@ void main() {
 
   List<int> marks = [10, 45, 34, 432];
   print(marks);
+
+  List<Student> studentList = [
+    Student("Baroda"),
+    Student("Ahms"),
+    Student("Anand")
+  ];
+  List students = [
+    Student("Baroda"),
+    Student("Ahms"),
+    Student("Anand"),
+    "Hello",
+    20,
+    false
+  ];
+
+  final student1 = students[5];
+  if (student1 is Student) {
+    print(student1.name);
+  } else {
+    print(student1);
+  }
+
+  print(studentList[0]);
+  print(studentList[0].name);
+}
+
+class Student {
+  final String name;
+  Student(this.name);
 }
