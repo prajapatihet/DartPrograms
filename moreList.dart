@@ -33,7 +33,7 @@ void main() {
   }
   print(filteredStudents);
 
-  // another simpler onces
+  // another simpler onces it is efficient way
   final filtered = students.where((student) => student.marks >= 20);
   // it will give iterable
   print(filtered);
