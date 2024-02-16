@@ -5,6 +5,7 @@ void main() {
   print(lname);
   var name1 = name();
   print(name1.$1);
+  print(lname);
 }
 
 void firstName() {
